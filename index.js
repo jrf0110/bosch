@@ -19,7 +19,7 @@ define(function(require){
     , url:    url
     }, callback);
 
-    return exports
+    return exports;
   };
 
   exports.post = function(url, data, callback){
@@ -29,7 +29,7 @@ define(function(require){
     , url:    url
     }, callback);
 
-    return exports
+    return exports;
   };
 
   exports.put = function(url, data, callback){
@@ -39,7 +39,7 @@ define(function(require){
     , url:    url
     }, callback);
 
-    return exports
+    return exports;
   };
 
    exports.put = function(url, data, callback){
@@ -49,7 +49,7 @@ define(function(require){
     , url:    url
     }, callback);
 
-    return exports
+    return exports;
   };
 
   exports.delete = function(url, data, callback){
@@ -59,7 +59,7 @@ define(function(require){
     , url:    url
     }, callback);
 
-    return exports
+    return exports;
   };
 
   /**
