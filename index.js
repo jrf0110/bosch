@@ -8,9 +8,12 @@ define(function(require){
   exports.ajax = exports.http = req;
 
   exports.stage = function(fns){
-    var call = function(name){ fns[name](call); };
-    return call;
+    var call = function(name){
+      fns[name].apply(null, Array.prototype.slice.call(arguments, 1).concat(call));
+    };
+    return call('start');
   };
+
 
   exports.get = function(url, params, callback){
     exports.ajax({
